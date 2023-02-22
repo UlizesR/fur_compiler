@@ -1,6 +1,8 @@
 #ifndef FUR_AST_H
 #define FUR_AST_H
 
+#include "list.h"
+
 typedef struct  AST_STRUCT
 {
     enum {
@@ -12,6 +14,8 @@ typedef struct  AST_STRUCT
         AST_NOOP,
         
     } type;
+
+    list_T* children;
 } AST_T;
 
 AST_T* init_ast(int type);
