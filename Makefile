@@ -17,8 +17,6 @@ $(exec): $(objects)
 clean:
 	-rm *.out
 	-rm src/*.o
-	-rm *.a
-	-rm src/*.a
 
 lint:
 	clang-tidy src/*.c src/include/*.h 

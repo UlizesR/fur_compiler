@@ -1,3 +1,4 @@
-.DS_Store
+PDS_Store
 /src/*.o
 /*.out
+/.vscode
